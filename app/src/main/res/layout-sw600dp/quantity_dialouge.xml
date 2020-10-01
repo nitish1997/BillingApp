@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/inputtext_border"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/inputtext_border"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_weight="1.8"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+    <EditText
+     android:layout_width="100dp"
+     android:layout_height="60dp"
+     android:layout_below="@+id/ll"
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="60dp"
+     android:hint="@string/_10"
+     android:singleLine="true"
+     android:inputType="numberDecimal"
+     android:gravity="center"
+     android:id="@+id/comment"
+     android:importantForAutofill="no" />
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/update"
+        android:layout_alignParentBottom="true"
+        android:background="#055ca6"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</RelativeLayout>

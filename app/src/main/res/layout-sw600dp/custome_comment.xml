@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/inputtext_border"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll"
+        android:background="@drawable/inputtext_border"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+    <EditText
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:id="@+id/comment"
+     android:background="@drawable/inputtext_border"
+     android:inputType="text"
+     android:singleLine="true"
+     android:hint="@string/enter_comment_here"
+     android:padding="8dp"
+     android:gravity="top"
+     tools:ignore="Autofill" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:background="#055ca6"
+           android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:background="#f12"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
